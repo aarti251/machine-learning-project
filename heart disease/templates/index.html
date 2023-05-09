@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Heart disease</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+  </head>
+  <style>
+    .text-white{
+      color:white
+    }
+  </style>
+  <body>
+    <center>
+    <h1>Heart disease</h1>
+    <style>
+        body {
+          background-image: url({{url_for('static',filename='bulltin/R.jpg')}});
+        }
+        </style>
+    <form method='POST' action="/predict">
+        <label class="text-white" >age</label><br>
+        <input type="text" name="age"><br>
+        <label  class="text-white">sex	</label><br>
+        <input type="text" name="sex"><br>
+        <label class="text-white" >cp</label><br>
+        <input type="text" name="cp"><br>
+        <label class="text-white">trestbps</label><br>
+        <input type="text" name="trestbps"><br>
+        <label class="text-white">chol</label><br>
+        <input type="text" name="chol"><br>
+        <label class="text-white">fbs</label><br>
+        <input type="text" name="fbs"><br>
+        <label class="text-white" >restecg</label><br>
+        <input type="text" name="restecg"><br>
+        <label class="text-white">thalach</label><br>
+        <input type="text" name="thalach"><br>
+        <label class="text-white">exang</label><br>
+        <input type="text" name="exang"><br>
+        <label class="text-white">oldpeak</label><br>
+        <input type="text" name="oldpeak"><br>
+        <label class="text-white">slope</label><br>
+        <input type="text" name="slope"><br>
+        <label class="text-white">ca</label><br>
+        <input type="text" name="ca"><br>
+        <label class="text-white">thal</label><br>
+        <input type="text" name="thal"><br>
+        
+        <input type="submit" value="predict"><br>
+   
+        </form>
+    </center>
+  </body>
+</html>
